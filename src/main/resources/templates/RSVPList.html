@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All RSVPs</title>
+</head>
+    <body>
+        <h2>List of all RSVPs</h2>
+        <table data-th-unless="${#lists.isEmpty(rsvpList)}" border="1">
+            <thead>
+                <tr>
+                    <th>Name:</th>
+                    <th>Phone:</th>
+                    <th>Email:</th>
+                    <th>Confirmation Date:</th>
+                    <th>Comments:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-th-each="rsvp : ${rsvpList}">
+                    <td><span data-th-text="${rsvp.name}"></span> </td>
+                    <td><span data-th-text="${rsvp.phone}"></span> </td>
+                    <td><span data-th-text="${rsvp.email}"></span> </td>
+                    <td><span data-th-text="${rsvp.date}"></span> </td>
+                    <td><span data-th-text="${rsvp.comments}"></span> </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

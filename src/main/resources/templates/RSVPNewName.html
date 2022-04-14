@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New RSVP Added</title>
+</head>
+    <body>
+        <h2>Your RSVP has been added</h2>
+        <table>
+            <tr>
+                <td>Name: <span data-th-text="${newRsvp.name}" ></span></td>
+            </tr>
+            <tr>
+                <td>Email: <span data-th-text="${newRsvp.email}" ></span></td>
+            </tr>
+            <tr>
+                <td>Phone: <span data-th-text="${newRsvp.phone}" ></span></td>
+            </tr>
+            <tr>
+                <td>Confirmation date: <span data-th-text="${newRsvp.date}" ></span></td>
+            </tr>
+            <tr>
+                <td>Comments: <span data-th-text="${newRsvp.comments}" ></span></td>
+            </tr>
+        </table>
+    </body>
+</html>
