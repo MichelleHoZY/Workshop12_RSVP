@@ -1,7 +1,7 @@
 name: Compile, test, deploy
 on: [ "push" ]
 env:
-  MYSQL_DATABASE_KEY: ${{ secrets.mysql_database_key }}
+  SPRING_DATASOURCE_PASSWORD: ${{ secrets.mysql_database_key }}
 jobs:
   step1:
     runs-on: ubuntu-latest

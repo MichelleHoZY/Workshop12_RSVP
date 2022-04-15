@@ -109,4 +109,5 @@ class Workshop12ApplicationTests {
 		List<RSVP> testingList = new LinkedList<>();
 		assertEquals(testingList, rsvpSvc.searchNames("Winters"));
 	}
+
 }
