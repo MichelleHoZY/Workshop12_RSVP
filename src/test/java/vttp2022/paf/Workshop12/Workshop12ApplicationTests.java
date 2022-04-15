@@ -93,9 +93,9 @@ class Workshop12ApplicationTests {
 	}
 
 	@Test
-	public void shouldReturn9() {
+	public void shouldReturn11() {
 		int count = rsvpSvc.countAllRSVP();
-		assertEquals(9, count);
+		assertEquals(11, count);
 	}
 
 	@Test
